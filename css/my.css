@@ -1,0 +1,147 @@
+body {
+  font-family: 微軟正黑體;
+  margin: 0 auto; 
+  width: 100%;
+  height: auto; 
+}
+
+a{
+  text-decoration: none;
+}
+/* Blocks */
+.site-section-cover {
+  position: relative; }
+  .site-section-cover, .site-section-cover .container {
+    position: relative;
+    z-index: 2; }
+  .site-section-cover, .site-section-cover .container > .row {
+    height: 100vh;
+    min-height: 700px; }
+    @media (max-width: 991.98px) {
+      .site-section-cover, .site-section-cover .container > .row {
+        height: 70vh;
+        min-height: 400px; } }
+  .site-section-cover.overlay {
+    position: relative; }
+    .site-section-cover.overlay:before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(52, 58, 64, 0.3);
+      z-index: 1; }
+  .site-section-cover.inner-page, .site-section-cover.inner-page .container > .row {
+    height: auto;
+    min-height: auto;
+    padding: 2em 0; }
+  .site-section-cover.img-bg-section {
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .site-section-cover h1 {
+    font-size: 4.5rem;
+    color: #fff;
+    line-height: 1; }
+    @media (max-width: 991.98px) {
+      .site-section-cover h1 {
+        font-size: 2rem; } }
+  .site-section-cover p {
+    font-size: 1.6rem;
+    color: rgba(255, 255, 255, 0.8); }
+
+.site-section {
+  padding: 3rem 0; }
+  @media (max-width: 991.98px) {
+    .site-section {
+      padding: 3rem 0; } }
+/************ 圖片圓角樣式 ************/
+/*.gallery img.radius {
+  border-radius: 20px;
+}*/
+
+.banner,.foot{
+  text-shadow: 2px 2px 0px #eee, 1px 1px 0px #707070;
+}
+
+/************ banner縮小後樣式 ************/
+@media screen and (max-width: 600px) {
+  .banner {
+    font-size: 3em;
+  }
+}
+
+/******* start 文章文字大小按鈕樣式 ********/
+.fontsizebox p {
+  margin: 20px 0 0 0;
+}
+
+.fontResizer {
+  margin: 10px 0;
+  height: 40px;
+  float: right;
+}
+
+.fontResizer a {
+  display: block;
+  float: left;
+  width: 32px;
+  height: 32px;
+  text-align: center;
+  border: 1px solid #ccc;
+  line-height: 32px;
+  color: #666;
+  text-decoration: none;
+}
+
+.fontResizer a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+.smallFont {
+  font-size: 16px;
+}
+
+.medFont {
+  font-size: 18px;
+}
+
+.largeFont {
+  font-size: 24px;
+}
+
+.curFont {
+  background: #eeeef7;
+}
+/******* end 文章文字大小按鈕樣式 ********/
+
+/******* back to top樣式 ********/
+
+#back2Top {
+    width: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    z-index: 999;
+    display: none;
+    cursor: pointer;
+    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+    position: fixed;
+    bottom: 50px;
+    right: 0;
+    background-color: #DDD;
+    color: #555;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+}
+#back2Top:hover {
+    background-color: #DDF;
+    color: #000;
+}
+
+
